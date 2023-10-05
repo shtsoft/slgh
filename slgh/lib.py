@@ -1,0 +1,46 @@
+""" Describe the module ...
+"""
+
+
+class LibClass:
+    """Like module ...
+    """
+
+    def __init__():
+        """Like function ...
+        """
+
+    def method():
+        """Like function ...
+        """
+        return 0
+
+
+def _private_lib_function():
+    """Describe the function in one line ...
+
+    Args:
+        arg1: Describe type, contract, meaning, ...
+        arg2: ...
+
+    Describe the function more thoroughly (side effects ...) ...
+
+    Raises:
+        raise1: ...
+    """
+    return 0
+
+
+def lib_function():
+    """Describe the function in one line ...
+
+    Args:
+        arg1: Describe type, contract, meaning, ...
+        arg2: ...
+
+    Describe the function more thoroughly (side effects ...) ...
+
+    Raises:
+        raise1: ...
+    """
+    return 0
