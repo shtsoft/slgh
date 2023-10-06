@@ -1,0 +1,22 @@
+name: Audit
+
+on:
+  push:
+    paths:
+      - '**/pyproject.toml'
+      - '**/requirements.txt'
+  schedule:
+    - cron: '0 2 * * 1'
+
+jobs:
+  audit:
+    name: audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pypa/gh-action-pip-audit@v1.0.5
+        with:
+          inputs: .
+      - uses: pypa/gh-action-pip-audit@v1.0.5
+        with:
+          inputs: requirements.txt
