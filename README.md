@@ -7,28 +7,33 @@
 [pypi-badge]: https://img.shields.io/pypi/v/slgh.svg
 [pypi-url]: https://pypi.org/project/slgh
 [license-badge]: https://img.shields.io/badge/license-GPL-blue.svg
-[license-url]: ./LICENSE.txt
+[license-url]: ./LICENSE
 [actions-badge]: https://github.com/shtsoft/slgh/actions/workflows/ci.yaml/badge.svg
 [actions-url]: https://github.com/shtsoft/slgh/actions/workflows/ci.yaml
 
-A **suckless** github client.
+A **suckless** github client for the command line.
 
 - suckless:
+  * simple CLI
   * ...
 
-### Design
+### Installation
 
-...
+You can install slgh with `pip` by running something like:
+
+```console
+user@host:~$ pip install slgh
+```
+
+The details depend on your Python setup.
 
 ### Usage
 
-Run
+To get a usage description just run the app without arguments:
 
+```console
+user@host:~$ slgh
 ```
-slgh
-```
-
-for a usage-description.
 
 ## Contributing
 
