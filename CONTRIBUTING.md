@@ -44,23 +44,31 @@ Specifically, make sure the code passes the 'python-lsp-server[all]'-package.
 
 ### Documentation
 
-Document modules and functions as well as classes and methods adhering to the current style.
+Document modules, interfaces (classes without implementation) and methods (functions declared as part of an interface) as well as public comatches (classes implementing an interface) and public functions adhering to the current style.
+For interfaces this means to write a description of what it defines (intensionally).
+For methods, comatches and functions this means to write a 'contract' made up by:
+1. a description of what the method/comatch/function does
+2. a description of the arguments (if there are any)
+3. a description of the side effects (if there are any)
+4. a description of the preconditions, postconditions and invariants (if there are any)
+5. additional information interesting to callers (if there is some)
 
 ### Testing
 
 Add tests as necessary adhering to the current style.
+The guideline is to only test the public APIs of modules.
 In the end, make sure that
 - all tests work as expected by running `python -m unittest`.
 - all executables run as expected after installing with `python -m pip install .`.
 
-## Github
+## GitHub
 
-This project is hosted on Github.
-In the folllowing it is briefly described how this project intends to leverage Github for development.
+This project is hosted on GitHub.
+In the folllowing it is briefly described how this project intends to leverage GitHub for development.
 
 ### Issues
 
-Github Issues is how contributors shall communicate.
+GitHub Issues is how contributors shall communicate.
 Issue-templates are provided to type communication a bit.
 But in doubt, feel free to use blank issues.
 
@@ -79,13 +87,13 @@ In a nutshell, what they do is
 
 As usual, if you can not directly push to the repository use pull requests for contributions.
 A pull request-template is provided to assist you.
-Otherwise try to keep pull request small and focused (like a topic-branch - see [Git](#git)).
+Otherwise try to keep pull requests small and focused (like a topic-branch - see [Git](#git)).
 In any case, take all the other sections into account to ease the pain of merging your pull request.
 
 ## Git
 
 This project uses git for version control and contributors are kindly asked to use git as described in the [git-book](https://git-scm.com/book/en/v2).
-In the following the most important aspects are recounted and few things are nailed down.
+In the following, the most important aspects are recounted and a few things are nailed down.
 
 ### Commits
 
