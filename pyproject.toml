@@ -7,7 +7,7 @@ name = "slgh"
 version = "0.1.0"
 description = "A github client."
 readme = "README.md"
-license = { file="LICENSE.txt" }
+license = { file="LICENSE" }
 keywords = ["suckless", "github"]
 classifiers = [
     "Programming Language :: Python :: 3",
