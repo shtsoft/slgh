@@ -1,9 +1,3 @@
-""" Describe the package in one line ...
-
-Describe the design of the package ...
-"""
-
-
 import sys
 
 

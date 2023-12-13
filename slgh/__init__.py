@@ -3,12 +3,13 @@ import logging
 import sys
 
 
-from slgh import lib
+from slgh import api.placeholder
 
 
 CORE_VENV_DEPS = ('pip', 'setuptools')
 logger = logging.getLogger(__name__)
 
 
-def main(argv=None):
-    lib.lib_function()
+def main(argv):
+    config = argv[1]
+    api.placeholder.run(config)
