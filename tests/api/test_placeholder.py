@@ -8,7 +8,7 @@ from slgh.api.placeholder import PlaceholderClass
 class TestLib(unittest.TestCase):
 
     def test_lib_function(self):
-        self.assertEqual(placeholder_function(), 0)
+        self.assertEqual(placeholder_function(0, 0), 0)
 
     def test_lib_class_method(self):
         placeholder_object = PlaceholderClass(0)
